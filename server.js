@@ -14,16 +14,13 @@ mongoose.connection.on("connected", () => {
 // Import the Fruit model
 const Fruit = require("./models/fruit.js");
 
-app.listen(3000, () => {
-  console.log("Listening on port 3000");
-});
-// server.js
-
-
-// server.js
-
 // GET /template to render on the page
 app.get("/", async (req, res) => {
     res.render("index.ejs");
   });
   
+
+app.listen(3000, () => {
+  console.log("Listening on port 3000");
+});
+
